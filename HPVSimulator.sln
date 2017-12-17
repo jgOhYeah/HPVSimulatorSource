@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPVSimulator", "Assembly-CSharp.csproj", "{19C9F89C-F1B9-0FC2-0826-E973E3F7D9F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPVSimulator", "Assembly-CSharp-Editor.csproj", "{A29C5ED0-D1EC-B53F-043A-8F6E7F452B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C9F89C-F1B9-0FC2-0826-E973E3F7D9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C9F89C-F1B9-0FC2-0826-E973E3F7D9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C9F89C-F1B9-0FC2-0826-E973E3F7D9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C9F89C-F1B9-0FC2-0826-E973E3F7D9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29C5ED0-D1EC-B53F-043A-8F6E7F452B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29C5ED0-D1EC-B53F-043A-8F6E7F452B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29C5ED0-D1EC-B53F-043A-8F6E7F452B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29C5ED0-D1EC-B53F-043A-8F6E7F452B09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

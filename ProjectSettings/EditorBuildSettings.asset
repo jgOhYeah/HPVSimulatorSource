@@ -18,5 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Velodrome.unity
     guid: 341c3592742de0e4f9a5b8c8f3659d61
   - enabled: 1
+    path: Assets/Scenes/Maryborough.unity
+    guid: f155b1796421b994dae56957cec95ee5
+  - enabled: 1
+    path: Assets/Scenes/OhYeah.unity
+    guid: 82f2816276d16da45944fcd5d5ccfa6a
+  - enabled: 0
     path: Assets/Prefabs/Moon.unity
     guid: 78c5033993cc1ba48a75e07743627d28

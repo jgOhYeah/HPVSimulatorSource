@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class HPVControl : MonoBehaviour {
 	//Inputs
@@ -30,6 +31,9 @@ public class HPVControl : MonoBehaviour {
 	public float cadence;
 	public float power;
 	public int gear = 0;
+	public int numberLaps = 0;
+	public float currentLapTime = 0;
+	public float distance;
 
 	//Settings and stuff
 	public float brakeAdjust = 1;
@@ -47,9 +51,18 @@ public class HPVControl : MonoBehaviour {
 	public Transform pedals;
 	public AudioSource hornSound;
 
+	//Start/Finish line
+	public string finishLineTag;
+	public float minTimeDelay = 1f;
+	public bool notFirstLap = false;
+	public float bestLap = 0;
+
 	//Private stuff
 	private Rigidbody r_Ridgedbody;
 	private bool gearZeroCrossed = false;
+	private float lastLapStart = 0;
+	private bool hasExited = true;
+	private string bestLapName;
 
 	public void Start()
 	{
@@ -57,10 +70,15 @@ public class HPVControl : MonoBehaviour {
 		r_Ridgedbody = GetComponent<Rigidbody>();
 		r_Ridgedbody.centerOfMass = t_CenterOfMass.localPosition;
 		hornSound.mute = true;
+
+		bestLapName = "BestTime_" + SceneManager.GetActiveScene ().name;
+		bestLap = PlayerPrefs.GetFloat (bestLapName, 0);
 	}
 
 	public void Update()
 	{
+		//Lap timing
+		currentLapTime = Time.time - lastLapStart;
 		//Sets the wheel meshs to match the rotation of the physics WheelCollider.
 		UpdateMeshPosition();
 		if (gearInput < 0.5 && gearInput > -0.5) {
@@ -162,6 +180,35 @@ public class HPVControl : MonoBehaviour {
 			///Sets the mesh to match the position and rotation of the physics WheelColliders.
 			wheelMesh [i].position = pos;
 			wheelMesh [i].rotation = quat;
+		}
+	}
+	//Finish Line detection
+	void OnTriggerEnter(Collider other) {
+		float lapTotalTime = Time.time - lastLapStart;
+		if (other.gameObject.CompareTag ("FinishLine") && lapTotalTime > minTimeDelay && hasExited) {
+			hasExited = false;
+			print ("Hit finish line!");
+			numberLaps++;
+			if (notFirstLap) {
+				print ("This is not the first lap");
+				//Best Score
+				if (!PlayerPrefs.HasKey (bestLapName)) {
+					print ("Best Time is not a player pref. Setting current lap");
+					PlayerPrefs.SetFloat (bestLapName, lapTotalTime);
+					bestLap = lapTotalTime;
+				} else if (PlayerPrefs.GetFloat (bestLapName) > lapTotalTime) {
+					print ("New lap record set at " + lapTotalTime + " seconds");
+					PlayerPrefs.SetFloat (bestLapName, lapTotalTime);
+					bestLap = lapTotalTime;
+				}
+			}
+			lastLapStart = Time.time;
+			notFirstLap = true;
+		}
+	}
+	void OnTriggerExit(Collider other) {
+		if (other.gameObject.CompareTag ("FinishLine")) {
+			hasExited = true;
 		}
 	}
 }

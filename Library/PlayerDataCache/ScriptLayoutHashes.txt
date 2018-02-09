@@ -1,5 +1,5 @@
 WebGL
-f7f028c85c8ec91eca79af3f2d7aee5a Assembly-CSharp.dll:.HPVControl
+05cb5821be37f2382a9a7ce8a6b6daca Assembly-CSharp.dll:.HPVControl
 05186b960f671ed8285ac44ad2958d3d Assembly-CSharp.dll:.GaugeControl
 5119ac7e5360e4104b2735573d07893a Assembly-CSharp.dll:.RearWheelDrive
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -15,10 +15,11 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 7b848b7feaa524953d09fc1851efa6da UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+6be47041a0d7584b766785f563e4f3ee Assembly-CSharp.dll:.lapTimer
 cd2a44e5a834951a89266544e6bd3c11 Assembly-CSharp.dll:.DisplayControl
 bec787c0c0416d570ab6a8d76c420f32 Assembly-CSharp.dll:.AIActivate
 4ff2419d41f52340a972810a09d35b2b Assembly-CSharp.dll:.EasySuspension
-4b24a246b0f010dad16c8cb1c76856f8 Assembly-CSharp.dll:.OptionsController
+d530e0b8f546b08821480f69a939696d Assembly-CSharp.dll:.OptionsController
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -52,7 +53,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 d826cfdc1b612b9d43b5bce8b3a19d9d Assembly-CSharp.dll:.UIButtons
-f0fbbae0d39a6fd3ece5b346f37fb767 Assembly-CSharp.dll:.eastereggBarrel
+4844f34e0374f0401c981093d1818946 Assembly-CSharp.dll:.eastereggBarrel
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -151,7 +152,10 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 7c38c129851bf38fcfb289810ed11654 Assembly-CSharp.dll:.SateliteControl
+3528d5cd531a5909c698103e5bfe5463 Assembly-CSharp.dll:.ShellControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.easteregg
+2c43c16c2a7ec1ae6afd573432e4200c Assembly-CSharp.dll:.FlipRightWayUp
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UIHPVControl
+bd6371e44b638ddb5d86e68178dd2056 Assembly-CSharp.dll:.LevelSetupTransformRotate
 5d5ac48a0871a6bcf830f98159ecd281 Assembly-CSharp.dll:.CameraController
 93600ae197ff1c9a03145741688c2f20 Assembly-CSharp.dll:.AICarControl

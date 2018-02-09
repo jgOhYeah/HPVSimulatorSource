@@ -11,32 +11,38 @@ ModelImporter:
     100006: FenceTop
     100008: FenceBack
     100010: FenceTopBack
+    100012: Text
     400000: Fence
     400002: Ground
     400004: //RootNode
     400006: FenceTop
     400008: FenceBack
     400010: FenceTopBack
+    400012: Text
     2300000: Fence
     2300002: Ground
     2300004: FenceTop
     2300006: FenceBack
     2300008: FenceTopBack
+    2300010: Text
     3300000: Fence
     3300002: Ground
     3300004: FenceTop
     3300006: FenceBack
     3300008: FenceTopBack
+    3300010: Text
     4300000: Ground
     4300002: Fence
     4300004: FenceTop
     4300006: FenceTopBack
     4300008: FenceBack
+    4300010: Text
     6400000: Fence
     6400002: Ground
     6400004: FenceTop
     6400006: FenceBack
     6400008: FenceTopBack
+    6400010: Text
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Maryborough.unity
+- path: Assets/Scenes/Velodrome.unity
   isLoaded: 1
   isActive: 1

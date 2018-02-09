@@ -51,33 +51,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AIActivate.cs" />
-     <Compile Include="Assets\easteregg.cs" />
-     <Compile Include="Assets\eastereggBarrel.cs" />
      <Compile Include="Assets\EasySuspension\EasySuspension.cs" />
      <Compile Include="Assets\Models\HPV\Tom\PealRotator.cs" />
      <Compile Include="Assets\PlayerPrefsEditor\PlayerPrefsUtility.cs" />
      <Compile Include="Assets\PlayerPrefsEditor\SimpleEncryption.cs" />
-     <Compile Include="Assets\RearWheelDrive.cs" />
-     <Compile Include="Assets\ScreenRecorder.cs" />
+     <Compile Include="Assets\Scripts\AIActivate.cs" />
      <Compile Include="Assets\Scripts\AICarControl.cs" />
      <Compile Include="Assets\Scripts\AutoCamControl.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSwap.cs" />
      <Compile Include="Assets\Scripts\DisplayActivate.cs" />
      <Compile Include="Assets\Scripts\DisplayControl.cs" />
+     <Compile Include="Assets\Scripts\easteregg.cs" />
+     <Compile Include="Assets\Scripts\eastereggBarrel.cs" />
      <Compile Include="Assets\Scripts\ExitProgram.cs" />
+     <Compile Include="Assets\Scripts\FlipRightWayUp.cs" />
      <Compile Include="Assets\Scripts\GaugeControl.cs" />
      <Compile Include="Assets\Scripts\GearControl.cs" />
      <Compile Include="Assets\Scripts\HelicopterCam.cs" />
      <Compile Include="Assets\Scripts\HPVControl.cs" />
+     <Compile Include="Assets\Scripts\lapTimer.cs" />
      <Compile Include="Assets\Scripts\LevelSelector.cs" />
      <Compile Include="Assets\Scripts\LevelSelectorTom.cs" />
+     <Compile Include="Assets\Scripts\LevelSetupTransformRotate.cs" />
      <Compile Include="Assets\Scripts\OptionsController.cs" />
+     <Compile Include="Assets\Scripts\RearWheelDrive.cs" />
      <Compile Include="Assets\Scripts\SateliteControl.cs" />
+     <Compile Include="Assets\Scripts\ScreenRecorder.cs" />
+     <Compile Include="Assets\Scripts\ShellControl.cs" />
+     <Compile Include="Assets\Scripts\Slideshow.cs" />
      <Compile Include="Assets\Scripts\UIButtons.cs" />
      <Compile Include="Assets\Scripts\UIHPVControl.cs" />
-     <Compile Include="Assets\Slideshow.cs" />
      <None Include="Assets\PlayerPrefsEditor\README.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
  <Reference Include="Facebook.Unity.Settings">
